@@ -16,6 +16,11 @@
 		D03DA3B91E37389D00D439C9 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA3B71E37389D00D439C9 /* Follow.storyboard */; };
 		D03DA3BC1E3738B400D439C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA3BA1E3738B400D439C9 /* Profile.storyboard */; };
 		D03DA3C31E373EF000D439C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3C01E373EF000D439C9 /* MainViewController.swift */; };
+		D03DA3D11E373FB800D439C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3D01E373FB800D439C9 /* HomeViewController.swift */; };
+		D03DA3D31E37401400D439C9 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3D21E37401400D439C9 /* LiveViewController.swift */; };
+		D03DA3D51E37402E00D439C9 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3D41E37402E00D439C9 /* FollowViewController.swift */; };
+		D03DA3D71E37404700D439C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3D61E37404700D439C9 /* ProfileViewController.swift */; };
+		D03DA3DA1E37436600D439C9 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3D91E37436600D439C9 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		D03DA3B81E37389D00D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		D03DA3BB1E3738B400D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		D03DA3C01E373EF000D439C9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D03DA3D01E373FB800D439C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D03DA3D21E37401400D439C9 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		D03DA3D41E37402E00D439C9 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		D03DA3D61E37404700D439C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D03DA3D91E37436600D439C9 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,7 @@
 		D03DA3B01E37341A00D439C9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3D81E37430700D439C9 /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 		D03DA3C41E373F0E00D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3D01E373FB800D439C9 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +204,7 @@
 		D03DA3C71E373F1500D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3D21E37401400D439C9 /* LiveViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 		D03DA3CA1E373F1E00D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3D61E37404700D439C9 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 		D03DA3CD1E373F4900D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3D41E37402E00D439C9 /* FollowViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,6 +265,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D03DA3D81E37430700D439C9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D03DA3D91E37436600D439C9 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03DA3D71E37404700D439C9 /* ProfileViewController.swift in Sources */,
 				D03DA3991E3733CB00D439C9 /* AppDelegate.swift in Sources */,
 				D03DA3C31E373EF000D439C9 /* MainViewController.swift in Sources */,
+				D03DA3DA1E37436600D439C9 /* UIBarButtonItem+Extension.swift in Sources */,
+				D03DA3D51E37402E00D439C9 /* FollowViewController.swift in Sources */,
+				D03DA3D31E37401400D439C9 /* LiveViewController.swift in Sources */,
+				D03DA3D11E373FB800D439C9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
