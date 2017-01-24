@@ -15,7 +15,7 @@
 		D03DA3B61E37388100D439C9 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA3B41E37388100D439C9 /* Live.storyboard */; };
 		D03DA3B91E37389D00D439C9 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA3B71E37389D00D439C9 /* Follow.storyboard */; };
 		D03DA3BC1E3738B400D439C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA3BA1E3738B400D439C9 /* Profile.storyboard */; };
-		D03DA3BE1E3738F000D439C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3BD1E3738F000D439C9 /* MainViewController.swift */; };
+		D03DA3C31E373EF000D439C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3C01E373EF000D439C9 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		D03DA3B51E37388100D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		D03DA3B81E37389D00D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		D03DA3BB1E3738B400D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
-		D03DA3BD1E3738F000D439C9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D03DA3C01E373EF000D439C9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				D03DA3B71E37389D00D439C9 /* Follow.storyboard */,
+				D03DA3CD1E373F4900D439C9 /* Controller */,
+				D03DA3CE1E373F4900D439C9 /* Model */,
+				D03DA3CF1E373F4900D439C9 /* View */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -96,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				D03DA3B11E37386500D439C9 /* Home.storyboard */,
+				D03DA3C41E373F0E00D439C9 /* Controller */,
+				D03DA3C51E373F0E00D439C9 /* Model */,
+				D03DA3C61E373F0E00D439C9 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -104,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				D03DA3B41E37388100D439C9 /* Live.storyboard */,
+				D03DA3C71E373F1500D439C9 /* Controller */,
+				D03DA3C81E373F1500D439C9 /* Model */,
+				D03DA3C91E373F1500D439C9 /* View */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -112,7 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				D03DA39C1E3733CB00D439C9 /* Main.storyboard */,
-				D03DA3BD1E3738F000D439C9 /* MainViewController.swift */,
+				D03DA3BF1E373EF000D439C9 /* Controller */,
+				D03DA3C11E373EF000D439C9 /* Model */,
+				D03DA3C21E373EF000D439C9 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -121,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				D03DA3BA1E3738B400D439C9 /* Profile.storyboard */,
+				D03DA3CA1E373F1E00D439C9 /* Controller */,
+				D03DA3CB1E373F1E00D439C9 /* Model */,
+				D03DA3CC1E373F1E00D439C9 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -130,6 +144,112 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		D03DA3BF1E373EF000D439C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D03DA3C01E373EF000D439C9 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03DA3C11E373EF000D439C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03DA3C21E373EF000D439C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03DA3C41E373F0E00D439C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03DA3C51E373F0E00D439C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03DA3C61E373F0E00D439C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03DA3C71E373F1500D439C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03DA3C81E373F1500D439C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03DA3C91E373F1500D439C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03DA3CA1E373F1E00D439C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03DA3CB1E373F1E00D439C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03DA3CC1E373F1E00D439C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03DA3CD1E373F4900D439C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03DA3CE1E373F4900D439C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03DA3CF1E373F4900D439C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03DA3991E3733CB00D439C9 /* AppDelegate.swift in Sources */,
-				D03DA3BE1E3738F000D439C9 /* MainViewController.swift in Sources */,
+				D03DA3C31E373EF000D439C9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
