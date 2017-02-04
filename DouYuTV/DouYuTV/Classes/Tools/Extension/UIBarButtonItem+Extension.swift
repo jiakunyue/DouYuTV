@@ -18,11 +18,15 @@ extension UIBarButtonItem {
         return UIBarButtonItem(customView: btn)
     }
     */
-    convenience init(imageName : UIImage, hightName : UIImage, size : CGSize) {
+    convenience init(imageName : UIImage, hightName : UIImage, size : CGSize = CGSize.zero) {
         let btn = UIButton()
         btn.setImage(imageName, for: .normal)
         btn.setImage(hightName, for: .highlighted)
-        btn.frame = CGRect(origin: CGPoint.zero, size: size)
+        if size == CGSize.zero {
+            btn.sizeToFit()
+        } else {
+            btn.frame = CGRect(origin: CGPoint.zero, size: size)
+        }
         
         self.init(customView: btn)
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03B08851E384B2B004FF418 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B08841E384B2B004FF418 /* PageTitleView.swift */; };
+		D03B08871E384E07004FF418 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B08861E384E07004FF418 /* Common.swift */; };
 		D03DA3991E3733CB00D439C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA3981E3733CB00D439C9 /* AppDelegate.swift */; };
 		D03DA39E1E3733CB00D439C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03DA39C1E3733CB00D439C9 /* Main.storyboard */; };
 		D03DA3A01E3733CB00D439C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03DA39F1E3733CB00D439C9 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D03B08841E384B2B004FF418 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		D03B08861E384E07004FF418 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		D03DA3951E3733CB00D439C9 /* DouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03DA3981E3733CB00D439C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03DA39D1E3733CB00D439C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,7 +101,6 @@
 		D03DA3AB1E37341A00D439C9 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				D03DA3B71E37389D00D439C9 /* Follow.storyboard */,
 				D03DA3CD1E373F4900D439C9 /* Controller */,
 				D03DA3CE1E373F4900D439C9 /* Model */,
 				D03DA3CF1E373F4900D439C9 /* View */,
@@ -108,7 +111,6 @@
 		D03DA3AC1E37341A00D439C9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D03DA3B11E37386500D439C9 /* Home.storyboard */,
 				D03DA3C41E373F0E00D439C9 /* Controller */,
 				D03DA3C51E373F0E00D439C9 /* Model */,
 				D03DA3C61E373F0E00D439C9 /* View */,
@@ -119,7 +121,6 @@
 		D03DA3AD1E37341A00D439C9 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				D03DA3B41E37388100D439C9 /* Live.storyboard */,
 				D03DA3C71E373F1500D439C9 /* Controller */,
 				D03DA3C81E373F1500D439C9 /* Model */,
 				D03DA3C91E373F1500D439C9 /* View */,
@@ -141,7 +142,6 @@
 		D03DA3AF1E37341A00D439C9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				D03DA3BA1E3738B400D439C9 /* Profile.storyboard */,
 				D03DA3CA1E373F1E00D439C9 /* Controller */,
 				D03DA3CB1E373F1E00D439C9 /* Model */,
 				D03DA3CC1E373F1E00D439C9 /* View */,
@@ -153,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				D03DA3D81E37430700D439C9 /* Extension */,
+				D03B08861E384E07004FF418 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -175,6 +176,7 @@
 		D03DA3C21E373EF000D439C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D03B08841E384B2B004FF418 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 		D03DA3C41E373F0E00D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3B11E37386500D439C9 /* Home.storyboard */,
 				D03DA3D01E373FB800D439C9 /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -204,6 +207,7 @@
 		D03DA3C71E373F1500D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3B41E37388100D439C9 /* Live.storyboard */,
 				D03DA3D21E37401400D439C9 /* LiveViewController.swift */,
 			);
 			path = Controller;
@@ -226,6 +230,7 @@
 		D03DA3CA1E373F1E00D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3BA1E3738B400D439C9 /* Profile.storyboard */,
 				D03DA3D61E37404700D439C9 /* ProfileViewController.swift */,
 			);
 			path = Controller;
@@ -248,6 +253,7 @@
 		D03DA3CD1E373F4900D439C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D03DA3B71E37389D00D439C9 /* Follow.storyboard */,
 				D03DA3D41E37402E00D439C9 /* FollowViewController.swift */,
 			);
 			path = Controller;
@@ -352,9 +358,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03B08851E384B2B004FF418 /* PageTitleView.swift in Sources */,
 				D03DA3D71E37404700D439C9 /* ProfileViewController.swift in Sources */,
 				D03DA3991E3733CB00D439C9 /* AppDelegate.swift in Sources */,
 				D03DA3C31E373EF000D439C9 /* MainViewController.swift in Sources */,
+				D03B08871E384E07004FF418 /* Common.swift in Sources */,
 				D03DA3DA1E37436600D439C9 /* UIBarButtonItem+Extension.swift in Sources */,
 				D03DA3D51E37402E00D439C9 /* FollowViewController.swift in Sources */,
 				D03DA3D31E37401400D439C9 /* LiveViewController.swift in Sources */,
@@ -388,7 +396,7 @@
 				D03DA3B21E37386500D439C9 /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		D03DA3B41E37388100D439C9 /* Live.storyboard */ = {
@@ -397,7 +405,7 @@
 				D03DA3B51E37388100D439C9 /* Base */,
 			);
 			name = Live.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		D03DA3B71E37389D00D439C9 /* Follow.storyboard */ = {
@@ -406,7 +414,7 @@
 				D03DA3B81E37389D00D439C9 /* Base */,
 			);
 			name = Follow.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		D03DA3BA1E3738B400D439C9 /* Profile.storyboard */ = {
@@ -415,7 +423,7 @@
 				D03DA3BB1E3738B400D439C9 /* Base */,
 			);
 			name = Profile.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -561,6 +569,7 @@
 				D03DA3A91E3733CB00D439C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
