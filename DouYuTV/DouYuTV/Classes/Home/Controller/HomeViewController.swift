@@ -11,12 +11,28 @@ import UIKit
 private let kTitleViewH : CGFloat = 35
 
 class HomeViewController: UIViewController {
+    
     // MARK: - 懒加载
     fileprivate lazy var pageTitleView : PageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
         return titleView
+    }()
+    
+    fileprivate lazy var pageContentView : PageContentView = {
+        let contentH = kScreenH - (kStatusBarH + kNavigationBarH + kTitleViewH)
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        var childVCs = [UIViewController]()
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)))
+            childVCs.append(vc)
+        }
+        let contentView = PageContentView(frame: contentFrame, childVCs: childVCs, parentViewController: self)
+        
+        return contentView
     }()
     
     // MARK: - 系统回调
@@ -41,8 +57,13 @@ extension HomeViewController {
         
         // 添加 titleView
         view.addSubview(pageTitleView)
+        
+        // 添加容器视图
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.red
     }
     
+    // 设置导航栏
     private func setupNav() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: #imageLiteral(resourceName: "logo"), hightName: #imageLiteral(resourceName: "logo"))
         

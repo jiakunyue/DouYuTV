@@ -22,11 +22,13 @@ class PageTitleView: UIView {
         scrollView.bounces = false
         return scrollView
     }()
+    
     fileprivate lazy var scrollLine: UIView = {
         let scrollLine = UIView()
         scrollLine.backgroundColor = UIColor.orange
         return scrollLine
     }()
+    
     fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
     
     // MARK: - 自定义构造函数
