@@ -8,13 +8,18 @@
 
 import UIKit
 
+
+protocol PageTitleViewDelegate : class {
+    func pageTitleView(titleView : PageTitleView, selectedIndex index : Int)
+}
 private let kScrollLineH: CGFloat = 2
 
 class PageTitleView: UIView {
-    // MARK: - 定义属性
+    // MARK:- 定义属性
     fileprivate var titles : [String]
-    
-    // MARK: - 懒加载
+    fileprivate var currentIndex : Int = 0
+    weak var delegate : PageTitleViewDelegate?
+    // MARK:- 懒加载
     fileprivate lazy var scrollView: UIScrollView = {
        let scrollView = UIScrollView()
         scrollView.showsHorizontalScrollIndicator = false
@@ -31,7 +36,7 @@ class PageTitleView: UIView {
     
     fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
     
-    // MARK: - 自定义构造函数
+    // MARK:- 自定义构造函数
     init(frame: CGRect, titles: [String]) {
         self.titles = titles
         super.init(frame: frame)
@@ -44,7 +49,7 @@ class PageTitleView: UIView {
     }
 }
 
-// MARK: - 设置 UI
+// MARK:- 设置 UI
 extension PageTitleView {
     
     fileprivate func setupUI() {
@@ -81,6 +86,10 @@ extension PageTitleView {
             
             scrollView.addSubview(label)
             titleLabels.append(label)
+            
+            label.isUserInteractionEnabled = true
+            let tapGes = UITapGestureRecognizer(target: self, action: #selector(PageTitleView.titleLabelClick))
+            label.addGestureRecognizer(tapGes)
         }
     }
     
@@ -97,5 +106,22 @@ extension PageTitleView {
         scrollView.addSubview(scrollLine)
         
         scrollLine.frame = CGRect(x: firstLabel.frame.origin.x, y: frame.height - kScrollLineH, width: firstLabel.frame.width, height: kScrollLineH)
+    }
+}
+
+// MARK:- 监听 label 的点击
+extension PageTitleView {
+    @objc fileprivate func titleLabelClick(tapGes : UITapGestureRecognizer) {
+        guard let currentLabel = tapGes.view as? UILabel else { return }
+        let oldLabel = titleLabels[currentIndex]
+        currentLabel.textColor = UIColor.orange
+        oldLabel.textColor = UIColor.darkGray
+        currentIndex = currentLabel.tag
+        let scrollLineX = CGFloat(currentLabel.tag) * scrollLine.frame.width
+        UIView.animate(withDuration: 0.15) { 
+            self.scrollLine.frame.origin.x = scrollLineX
+        }
+        
+        delegate?.pageTitleView(titleView: self, selectedIndex: currentIndex)
     }
 }
